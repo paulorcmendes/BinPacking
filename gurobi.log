@@ -1,0 +1,66 @@
+
+Gurobi 8.0.0 (win64, Python) logging started 06/08/18 21:36:58
+
+Academic license - for non-commercial use only
+Optimize a model with 240 rows, 14520 columns and 28920 nonzeros
+Variable types: 0 continuous, 14520 integer (14520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 82.0000000
+Presolve time: 0.04s
+Presolved: 240 rows, 14520 columns, 28920 nonzeros
+Variable types: 0 continuous, 14520 integer (14520 binary)
+
+Root relaxation: objective 4.718667e+01, 733 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   47.18667    0   66   82.00000   47.18667  42.5%     -    0s
+H    0     0                      59.0000000   47.18667  20.0%     -    0s
+H    0     0                      51.0000000   47.18667  7.48%     -    0s
+H    0     0                      50.0000000   47.18667  5.63%     -    0s
+     0     0   47.18667    0  111   50.00000   47.18667  5.63%     -    0s
+     0     0   47.18667    0   96   50.00000   47.18667  5.63%     -    0s
+     0     0   47.18667    0   56   50.00000   47.18667  5.63%     -    1s
+     0     0   47.18667    0   64   50.00000   47.18667  5.63%     -    1s
+     0     0   47.18667    0   51   50.00000   47.18667  5.63%     -    1s
+     0     0   47.18667    0   39   50.00000   47.18667  5.63%     -    2s
+     0     2   47.18667    0   32   50.00000   47.18667  5.63%     -    2s
+    13     2 infeasible    7        50.00000   47.18667  5.63%   167    5s
+H   19     2                      49.0000000   47.18667  3.70%   162    8s
+    23     2   47.18667   12   68   49.00000   47.18667  3.70%   163   10s
+    33     2 infeasible   17        49.00000   47.18667  3.70%   163   15s
+    52     2 infeasible   27        49.00000   47.18667  3.70%   160   20s
+    57     3   47.18667   29   67   49.00000   47.18667  3.70%   181   25s
+    72     2   47.18667   36   73   49.00000   47.18667  3.70%   170   30s
+    83     2 infeasible   42        49.00000   47.18667  3.70%   164   36s
+    90     1 infeasible   46        49.00000   47.18667  3.70%   162   40s
+    98     3   48.00000   49   62   49.00000   48.00000  2.04%   160   45s
+   106     3   48.00000   52   58   49.00000   48.00000  2.04%   150   50s
+   114     7   48.00000   55   61   49.00000   48.00000  2.04%   145   55s
+   130    10   48.00000   57   56   49.00000   48.00000  2.04%   137   61s
+   141    14   48.00000   62   63   49.00000   48.00000  2.04%   133   67s
+   148    14 infeasible   64        49.00000   48.00000  2.04%   131   70s
+   166    18   48.00000   65   62   49.00000   48.00000  2.04%   124   79s
+   180    23 infeasible   69        49.00000   48.00000  2.04%   119   87s
+H  181     6                      48.0000000   48.00000  0.00%   118   87s
+
+Cutting planes:
+  Cover: 171
+  Clique: 14
+  MIR: 13
+  StrongCG: 22
+  Zero half: 2
+
+Explored 195 nodes (46938 simplex iterations) in 87.85 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 6: 48 49 50 ... 82
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.800000000000e+01, best bound 4.800000000000e+01, gap 0.0000%
+Freed default Gurobi environment
