@@ -90,11 +90,11 @@ def GeneticAlgorithm(A, V, name):
     pop = NewPop(POP_SIZE, CHRM_SIZE)
     best = []
     obj = []
-    mean = []
+    #mean = []
     for gen in range(N_GENERATIONS):   
         fitness = PopFitness(pop, SIZEPERENTRY, A)
-        popObj = PopObj(fitness, A)
-        mean.append(np.mean(popObj))
+        #popObj = PopObj(fitness, A)
+        #mean.append(np.mean(popObj))
         
         best.append(np.max(fitness))
         obj.append(Obj(best[-1], A))
@@ -126,8 +126,8 @@ def GeneticAlgorithm(A, V, name):
         pop[auxF.index(np.min(auxF))] = bestChrm
         #</elitism>
     fitness = PopFitness(pop, SIZEPERENTRY, A)
-    popObj = PopObj(fitness, A)
-    mean.append(np.mean(popObj))
+    #popObj = PopObj(fitness, A)
+    #mean.append(np.mean(popObj))
     best.append(np.max(fitness))
     obj.append(Obj(best[-1], A))
     
@@ -136,7 +136,7 @@ def GeneticAlgorithm(A, V, name):
     
     print "Problem: "+name
     plt.plot(x, obj)
-    plt.plot(x, mean)
+    #plt.plot(x, mean)
     plt.show()
     print "Solution: "+str(obj[-1])
 

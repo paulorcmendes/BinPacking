@@ -87,6 +87,7 @@ with open("testFiles/binpack1.txt", "r") as arch:
         listA = [ int(x) for x in listA ]
        
         gurobi_AHA(listA, V, model_name)
+        print "Expected Solution "+solIdeal
         break
 
 #for i in range(P):
