@@ -46,7 +46,7 @@ def gurobi_AHA(A, V, model_name):
         print('Encountered an attribute error')
 
 
-with open("testFiles/binpack1.txt", "r") as arch:
+with open("testFiles/instancia1.txt", "r") as arch:
     fileList = arch.read().replace(" ", "\n").split("\n")
     
     fileList = filter(lambda a: a != '', fileList)
